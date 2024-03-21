@@ -1,0 +1,119 @@
+:root {
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --border-color: #555;
+    --button-background: #303134;
+    --button-hover-background: #393a3f;
+    --select-background: #fff;
+    --select-hover-background: #f0f0f0;
+    --select-border: #ccc;
+    --select-focus-box-shadow: rgba(81, 203, 238, 1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+  }
+  
+  .app {
+    width: 60%;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+  }
+  
+  .language-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  select option:hover {
+    background-color: var(--select-hover-background);
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--select-focus-box-shadow);
+  }
+  
+  select::after {
+    content: '\25BC';
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 10px;
+    color: #666;
+  }
+  
+  .language-options select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border: 1px solid var(--select-border);
+    border-radius: 5px;
+    background-color: var(--select-background);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  .language-options span {
+    margin: 0 10px;
+  }
+  
+  .textfield {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .texttxt {
+    width: 40%;
+    margin: 1%;
+  }
+  
+  .textfield textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    font-size: 16px;
+    resize: none;
+    padding: 10px;
+    color: var(--text-color);
+  }
+  
+  .response {
+    margin: 1%;
+    color: var(--text-color);
+    width: 40%;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+  }
+  
+  button {
+    background-color: var(--button-background);
+    border: 1px solid var(--border-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-background);
+  }
+  
